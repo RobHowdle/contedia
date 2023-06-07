@@ -6,7 +6,7 @@
         <h3 class="card-header text-center">Login</h3>
         <p class="card-header-text">Please login below</p>
         <div class="card-body">
-          <form method="POST" action="users/authenticate">
+          <form method="POST" action="{{ route('authenticate') }}">
             @csrf
             <div class="input-wrapper">
               <input type="text" value="{{ old('email') }}" placeholder="Email" id="email" class="form-control"

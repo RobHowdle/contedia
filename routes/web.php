@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Middleware\Authenticate;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
@@ -23,6 +23,7 @@ Route::get('/register', [AuthController::class, 'create'])->name('register');
 Route::post('/users/register', [AuthController::class, 'store']);
 
 Route::get('/login', [AuthController::class, 'show'])->name('login');
-Route::post('/users/authenticate', [AuthController::class, 'authenticate'])->middleware(Authenticate::class);
+
+Route::post('/users/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

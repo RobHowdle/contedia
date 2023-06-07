@@ -43,7 +43,7 @@ class AuthController extends Controller
              return redirect('/')->with('message', 'You are now logged in!');
         } 
 
-        return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput();
+        return back()->withErrors(['email' => 'Invalid Credentials'])->withInput();
     }
     public function logout(Request $request) {
         auth()->logout();
