@@ -19,11 +19,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/register', [AuthController::class, 'create'])->name('register');
+Route::get('/register', [AuthController::class, 'create'])->name('register')->middleware('guest');
 Route::post('/users/register', [AuthController::class, 'store']);
 
-Route::get('/login', [AuthController::class, 'show'])->name('login');
+Route::get('/login', [AuthController::class, 'show'])->name('login')->middleware('guest');
 
 Route::post('/users/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
 
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
