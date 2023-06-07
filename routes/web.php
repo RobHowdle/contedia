@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('/login', [AuthController::class, 'show'])->name('login');
 Route::post('/users/authenticate', [AuthController::class, 'authenticate']);
+
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

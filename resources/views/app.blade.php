@@ -20,6 +20,12 @@
       <div class="z-10 p-6 text-right sm:fixed sm:top-0 sm:right-0">
         @auth
           <a href="{{ url('/home') }}" class="nav-link">Home</a>
+          <div href="{{ route('logout') }}" class="nav-link">
+            <form class="inline" method="POST" action="{{ route('logout') }}">
+              @csrf
+              <button type="submit">Log Out</button>
+            </form>
+          </div>
         @else
           <a href="{{ route('login') }}" class="nav-link">Log
             in</a>
