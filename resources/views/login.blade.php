@@ -23,10 +23,7 @@
               @endif
             </div>
             <div class="input-wrapper">
-              <div class="checkbox">
-                <input type="checkbox" class="checkbox-spin" name="remember">
-                <label><span></span>Remember Me</label>
-              </div>
+              <p>Don't have an account? <a href="/register">Register</a></p>
             </div>
             <div class="submit-button">
               <button type="submit">Log In</button>

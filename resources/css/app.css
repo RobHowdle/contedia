@@ -12,6 +12,35 @@ html {
     justify-content: flex-end;
 }
 
+.wrapper a {
+    padding-inline: 0.5rem;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.nav-link button {
+    border: none;
+    background-color: transparent;
+    color: #f6f1f1;
+    cursor: pointer;
+}
+
+
+
+.text-wrapper {
+    max-width: 1680px;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+span.bold {
+    font-weight: 700;
+}
+
 .wrapper .nav-link {
     color: #F6F1F1; 
 }
@@ -37,6 +66,10 @@ html {
     padding: 1rem;
     background-color: #f6f1f1;
     border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #AFD3E2;
+    box-shadow: 10px 5px 5px #AFD3E2;
 }
 
 .card-header {

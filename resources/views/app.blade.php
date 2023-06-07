@@ -5,21 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Laravel</title>
+  <title>Contedia Test</title>
 
-  <!-- Fonts -->
   @vite('resources/css/app.css')
-
   <link rel="preconnect" href="https://fonts.bunny.net">
   <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/dd6bff54df.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="antialiased">
   <div class="wrapper">
     @if (Route::has('login'))
-      <div class="z-10 p-6 text-right sm:fixed sm:top-0 sm:right-0">
+      <div class="nav-wrapper">
         @auth
-          <a href="{{ url('/home') }}" class="nav-link">Home</a>
           <div href="{{ route('logout') }}" class="nav-link">
             <form class="inline" method="POST" action="{{ route('logout') }}">
               @csrf
