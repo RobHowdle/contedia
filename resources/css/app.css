@@ -1,0 +1,147 @@
+body {
+    margin: 0 !important;
+}
+
+html {
+    height: 100%;
+}
+.wrapper {
+    background-color: #146C94;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper .nav-link {
+    color: #F6F1F1; 
+}
+
+.container {
+    padding: 2rem;
+    max-width: 1680px;
+    margin-inline: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.card {
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f6f1f1;
+    border-radius: 25px;
+}
+
+.card-header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #19a7ce;
+    margin: 1rem 0 0 0;
+}
+
+p.card-header-text  {
+    text-align: center;
+    color: #146C94;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper span {
+    color: red;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 1rem;
+    border-color: #afd3e2;
+    border-width: 2px;
+    border-style: solid;
+    height: 40px;
+    letter-spacing: 0.1rem;
+}
+
+input[type="text"]:active,
+input[type="password"]:active {
+    border-color: #19a7ce;
+}
+
+.checkbox {
+    margin: 15px;
+}
+
+.checkbox-spin {
+    display: none;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-spin + label span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px -4px 0;
+}
+
+.checkbox-spin + label span:before,
+.checkbox-spin + label span:after {
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#146C94;
+}
+
+.checkbox-spin + label span:after {
+    z-index: 0;
+    border: none;
+}
+
+.checkbox-spin:checked + label span:before {
+    transform: rotateZ(180deg);
+    background-color: #146C94;
+}
+
+.submit-button button {
+    width: 100%;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: #19A7CE;
+    color: #F6F1F1;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #19A7CE;
+    transition-property: background-color, border-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.submit-button button:hover {
+    background-color: #146C94;
+    border-color: #146C94;
+}
