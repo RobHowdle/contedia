@@ -37,7 +37,7 @@
               @enderror
             </div>
             <div class="input-wrapper">
-              <p>Already have an account? <a href="/login">Login</a></p>
+              <p>Already have an account? <a class="form-button" href="/login">Login</a></p>
             </div>
             <div class="submit-button">
               <button type="submit">Register</button>

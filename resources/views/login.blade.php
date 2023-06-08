@@ -23,7 +23,7 @@
               @endif
             </div>
             <div class="input-wrapper">
-              <p>Don't have an account? <a href="/register">Register</a></p>
+              <p>Don't have an account? <a class="form-button" href="/register">Register</a></p>
             </div>
             <div class="submit-button">
               <button type="submit">Log In</button>

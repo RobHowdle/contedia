@@ -5,6 +5,27 @@ body {
 html {
     height: 100%;
 }
+
+a {
+    text-decoration-color: inherit;
+    text-underline-offset: 5px;
+    transition-property: text-decoration-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.sub-wrapper a,
+.form-button {
+    color: #000;
+    text-decoration-color: transparent;
+    font-weight: 700;
+}
+
+.sub-wrapper a:hover,
+.form-button:hover {
+    text-decoration-color: #000;
+}
+
 .wrapper {
     background-color: #146C94;
     padding: 2rem;
@@ -29,8 +50,6 @@ html {
     cursor: pointer;
 }
 
-
-
 .text-wrapper {
     max-width: 1680px;
     padding-block: 1rem;
@@ -43,6 +62,11 @@ span.bold {
 
 .wrapper .nav-link {
     color: #F6F1F1; 
+    text-decoration-color: transparent;
+}
+
+.wrapper .nav-link:hover {
+    text-decoration-color: #f6f1f1;
 }
 
 .container {
